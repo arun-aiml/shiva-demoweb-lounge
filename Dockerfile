@@ -1,5 +1,5 @@
-FROM httpd:2.4
+FROM nginx
 MAINTAINER name shiva
 LABEL this is shiva's demo web lounge
-EXPOSE 8080
-COPY . /usr/local/apache2/htdocs/
+EXPOSE 80
+COPY . /usr/share/nginx/html
